@@ -42,7 +42,9 @@ h1{
     transition-property: all;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
+h4{
+    color: rgba(10, 82, 218, 0.925);
+}
 
 
 
