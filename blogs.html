@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="view port"content="width=device-width,initial-scale=1.0">
+    <title>Home Page</title>
+    <!--linking the stylesheet file-->
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<!--HOME PAGE-->
+<!--beginning of the body-->
+<body>
+    <div class="Top-bar">
+        <!--Top-bar-->
+        <!--Notes:you can always use the <nav> tag for navigation--> 
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blogs.html">Blogs</a></li>
+                <li><a href="Contact-us.html">Contact-us</a></li>
+            </ul>
+    </div>
+    <h4 style="text-align: center;">Love Education Day</h4>
+    <p>Usually, on the 12th of February every year, Ingqwele celebrate its occasion that is called ‘Love Education Day’ where students who come from indigence are given calculators, school uniforms and stationeries. On such occasions, students are not only advised to pursue careers that only require Mathematics and Physical Sciences, but also those that are well in-synch with their personalities. It is unwise to coerce a person into selecting a career that s/he does not even like. That is like asking a person who has no fingers to play a guitar. In so doing, we are of view that we are contributing into making a better South Africa with educated bureaucrats. Students who passed their matric are given registration fees as a symbol of showing appreciation and thanking them for the way they performed during their final examinations. This helps in reducing the number of matriculates who passed from staying at home due to being unable to pay registration fees.  </p>
+
+    <br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="pic 1.jpg" style="width:100%">
+          <div class="text"> The award that were given to learners that performed exceptionally well in mathematics and physical science.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="pic4.jpg" style="width:100%">
+          <div class="text">The training by the youth for CV writing and job readiness and the reward of certificates</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="pic5.jpg" style="width:100%">
+          <div class="text">We organised a programme to donate to orphan children with the belief that education can change their living conditions</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
+
+
+
+        <br>
+        <h4 style="text-align: center;" >Difficulties of having no working material</h4>
+        <img style="margin-left: 450px;" src="pic 2.jpg" height="350" width="500">
+        <p>These are the difficulties that students who really need assistance face during the times they are with us. There are no proper chalkboards, only cardboards that aren’t adequate enough for even a single equation to fit. Though circumstances like this makes some students lose interest in coming to get help, there are some who still bear with us and does not let this be a hindrance to their education because they know what they want for their futures. We are optimistic that someday we will have enough equipment that we need in order to make this project successful. In the previous year, we produced one of the best students in the province using this cardboard as our chalkboard. So I believe that if we can get proper chalkboards and other material that we need we can produce more people who pass with excellent results through hard work. </p>
+
+        <hr style="width:75%">
+<img style="margin-left: 450px;" src="pic7.jpg" height="350" width="500">
+<p>This above article shows the workshop that was called Youth NPO Capacity Building Workshop, organised by Ingqwele community development organisation where by the different sectors of organisations show casing their work and services that they rendering in different communities. 
+We were invited different stakeholders to link their NPO with their relevant department when they are looking for funding.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+<div class="footer">
+        
+    <br>
+    <p >REG No     : 170 – 996</p>
+<p >B-BBEE     :  Level 1</p>
+<p >Tax N      :  943362198 </p>
+    <p>
+        <a href="https://m.facebook.com/100628728087916/photos/a.100628898087899/147498703400918/?type=3"><i class='fab fa-facebook-square' style='font-size:24px'></i></a>
+    </p>
+
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">&copy; Developed & Designed by Dlangalala Silungile in Durban,SA 2020</p>
+</div>
+</body>
+</html>
